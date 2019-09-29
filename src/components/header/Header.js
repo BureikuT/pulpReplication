@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import pulp from "../pics/pulp.webp";
 import facebook from "../pics/facebook.webp";
 import instagram from "../pics/instagram.webp";
@@ -14,7 +15,9 @@ class Header extends Component {
         <div className="pulp-links">
           <div className="link">ABOUT</div>
           <div className="link">MENU</div>
-          <div className="link">CONTACT</div>
+          <div >
+            <Link to="/contact" className='link'>CONTACT</Link>
+          </div>
           <div className="link">FAQ</div>
           <div className="link">CATERING</div>
           <div className="link">ONLINE ORDER</div>

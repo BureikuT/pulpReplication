@@ -20,15 +20,27 @@
 
 .pulp-links {
   display: flex;
+  color: #da7557;
   flex-direction: row;
   align-content: center;
   padding-left: 20px;
   padding-top: 23px;
+  -o-transition:.50s;
+  -ms-transition:.50s;
+  -moz-transition:.50s;
+  -webkit-transition:.50s;
+  transition:.50s
   
 }
 
 .link {
   padding-right: 15px;
+  cursor: pointer;
+  text-decoration: none; color:#da7557;
+}
+
+.link:hover{
+  color: #9ACB59
 }
 
 .social-links {
