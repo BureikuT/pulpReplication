@@ -1,21 +1,21 @@
-import React from 'react';
-import Header from './components/header/Header'
-import Contact from './components/contact/Contact'
-import Routing from './components/Routing'
+import React from "react";
+import Header from "./components/header/Header";
+import LandingPage from "./components/landingpage/LandingPage";
+import Footer from "./components/footer/Footer";
+import Routing from "./components/routing/Routing";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Router>
-      <Header/>
-      <Contact/>
-      <div className='bottom'>
-        <p className='copyright'>©Copyright 2019 PULP LIFESTYLE KITCHEN, LLC.</p>
-      </div>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route component={Routing} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

@@ -14,7 +14,9 @@ class Header extends Component {
         </div>
         <div className="pulp-links">
           <div className="link">ABOUT</div>
-          <div className="link">MENU</div>
+          <div>
+            <Link to='/menu' className='link'>MENU</Link>
+          </div>
           <div >
             <Link to="/contact" className='link'>CONTACT</Link>
           </div>

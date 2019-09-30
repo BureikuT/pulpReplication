@@ -25,7 +25,7 @@ class Contact extends Component {
         <div key={location.id} className="location-list">
           <div className="location-items">
             <div className="location-images">
-              <img src={location.picture} />
+              <img src={location.picture} alt='' />
             </div>
             <div className="info-row">
               <div className="info-title">{location.title}</div>
