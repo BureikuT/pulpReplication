@@ -1,6 +1,139 @@
-section.section.section-dark{
-    margin-top:100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+section.section.section-dark {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 250px;
+}
+
+.early {
+  color: #bada55;
+  font-size: 40px;
+  font-family: "Playfair Display";
+  padding-bottom: 20px;
+}
+
+.dash {
+  word-wrap: break-word;
+}
+
+ul {
+  margin: 0;
+  padding-left: 10px;
+  word-wrap: break-word;
+}
+
+ul.dash {
+  list-style-type: none;
+  word-wrap: break-word;
+}
+ul.dash > li {
+  text-indent: -5pc;
+  display: flex;
+  word-wrap: break-word;
+}
+
+li {
+  word-wrap: break-word;
+}
+ul.dash > li:before {
+  content: "-";
+  text-indent: -5px;
+  word-wrap: break-word;
+}
+
+.dash {
+  word-wrap: break-word;
+}
+
+.line-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.e-image {
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  display: block;
+  transition: 0;
+}
+
+.image-wrap {
+  margin: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 15px;
+  word-wrap: break-word;
+  padding-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 15px;
+}
+
+.n-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  list-style-position: inside;
+
+  text-overflow: ellipsis;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  top: 10%; /* Adjust this value to move the positioned div up and down */
+  font-family: Arial, sans-serif;
+  color: #fff;
+  width: 90%; /* Set the width of the positioned div */
+  transition: 0;
+}
+.overlay {
+  opacity: 0;
+}
+
+.box:hover .e-image {
+  opacity: 0.5;
+}
+
+.box:hover .image-wrap {
+  background-color: rgb(126, 115, 115);
+}
+.box:hover .overlay {
+  opacity: 1;
 }
