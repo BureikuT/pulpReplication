@@ -50,6 +50,8 @@ ul.dash > li:before {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 400px;
+  margin-right: 400px;
   flex-wrap: wrap;
   margin-top: 55px;
 }
