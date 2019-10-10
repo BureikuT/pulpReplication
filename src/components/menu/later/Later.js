@@ -1,29 +1,29 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./Early.css";
+import "./Later.css";
 
 const BASE_URL = "http://localhost:3001";
 
-class Early extends Component {
+class Later extends Component {
   constructor() {
     super();
     this.state = {
-      earlyMeals: []
+      lateMeals: []
     };
   }
 
   componentDidMount() {
-    axios.get(BASE_URL + "/api/earlyMeals").then(response => {
-      this.setState({ earlyMeals: response.data });
+    axios.get(BASE_URL + "/api/laterMeals").then(response => {
+      this.setState({ lateMeals: response.data });
     });
   }
 
   render() {
-    const eMeals = this.state.earlyMeals.map(meal => {
+    const eMeals = this.state.lateMeals.map(meal => {
       return (
         <div key={meal.id} className="box">
           <div className="className image-wrap">
-            <img className="e-image" src={meal.picture}  alt=''/>
+            <img className="e-image" src={meal.picture} alt="" />
           </div>
           <div className="className overlay">
             <div className="text">
@@ -61,28 +61,24 @@ class Early extends Component {
         </div>
       );
     });
-
     return (
       <div>
-        <section className="section section-dark">
-          <span className="early">Early</span>
+        <section className=" section section-dark">
+          <span className="later"> Later </span>
           <span className="center-line-up">
-            Available until 11 AM, Monday through Friday and all day Saturday
-            and Sunday
+            Available 11 AM - Close
             <span className="line-up"> {eMeals}</span>
           </span>
         </section>
-
-        <div className="pimg4">
-          <div className="ptext2">
-          PROTEINS + BASES. MIX & MATCH
-            </div>
-            <span className="border"></span>
+        <div className="padding">
+          <div className="pimg5">
+            <div className="ptext2">COLD-PRESSED JUICES & MORE</div>
           </div>
         </div>
-   
+        <span className="border"></span>
+      </div>
     );
   }
 }
 
-export default Early;
+export default Later;

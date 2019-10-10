@@ -1,0 +1,15 @@
+.later {
+  color: #bada55;
+  font-size: 40px;
+  font-family: "Playfair Display";
+}
+
+.available {
+  color: #989898;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.padding{
+  padding-bottom: 110px;
+}
